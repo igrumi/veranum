@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav>
+        <div class="logo">
+            <h4><img src="../img/logo.png" alt="">Veranum</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../pages/index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href="../pages/reservas.html">Reservas</a>
+            </li>
+            <li>
+                <a href="../pages/login.html">Iniciar sesión</a>
+            </li>
+        </ul>
+    </nav>
+    <!--FIN BARRA DE NAVEGACIÓN-->
+
+    <!--FORM LOGIN-->
+    <div class="loginbox">
+        <div class="login-form">
+            <h1>Iniciar sesión</h1>
+            <form class="form__product" action="#" method="post" id="login">
+                <div class="form__inputs">
+                    <div class="form__input">
+                        <label class="input__label" for="input__input--email">Email</label>
+                        <input class="input__input" id="input__input--email" name = "input__input--email"
+                        type="email" placeholder="Ingresar Email" required>
+                    </div>
+
+                    <div class="form__input">
+                        <label class="input__label" for="input__input--password">Contrase&nacute;a</label>
+                        <input class="input__input" id="input__input--password" name="input__input--password"
+                        type="password" placeholder="***" required>
+                    </div>
+                </div>
+                <a style="color: rgb(255, 197, 5);" class="form__forgot" href="../pages/registro.html">Registrarse</a>
+                <a style="color: rgb(255, 197, 5);" class="form__forgot" href="#">¿Olvidaste tu contrase&nacute;a?</a><br><br>
+                <a style=" text-align:center; width: 100%; text-decoration:none; color:rgb(255, 197, 5); font-weight:bold; font-size:1rem;" class="btn btn-primary"  href="../pages_user/index_user.html">User</a><br><br>
+                <a style=" text-align:center; width: 100%; text-decoration:none; color:rgb(255, 197, 5); font-weight:bold; font-size:1rem;" class="btn btn-primary"  href="../pages_admin/index_admin.html">Admin</a><br>
+                <div class="form__btns">
+                    <button href="../pages_user/index_user.html" class="form__btn" type="submit">Iniciar Sesi&oacute;n</button>
+                </div>
+
+                <div class="form__social">
+                    <img src="../imgs/icons/facebook-logo.webp" alt="" class="social__item">
+                    <img src="../imgs/icons/instagram-logo.png" alt="" class="social__item">
+                    <img src="../imgs/icons/twiter.png" alt="" class="social__item">
+                </div>
+
+                
+            </form>
+        </div>
+    </div>
+    <!--FIN FORM LOGIN-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/forms/login.js"></script>
+</body>
+</html>

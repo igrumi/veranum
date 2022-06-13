@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url(../img/bg.jpg)">
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav>
+        <div class="logo">
+            <h4><img src="../img/logo.png" alt="">Veranum</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../pages_user/index_user.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../pages_user/nosotros_user.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="../pages_user/servicios_user.html">Servicios</a>
+            </li>
+            <li>
+                <a href="../pages_user/reservas_user.html">Reservas</a>
+            </li>
+            <div class="act1">
+                <div class="perfil" onclick="menuToggle();">
+                <img src="../img/pic.jpg">
+                </div>
+                <div class="menu">
+                <h3>Tamara Grumi<br><span>Usuario</span></h3>
+                <ul>
+                    <li> <img src="../img/user.png"><a href="../vistas_user/indexuser.html">Mi perfil</a></li>
+                    <li> <img src="../img/settings.png"><a href="../vistas_user/indexuser.html">Configuración</a></li>
+                    <li> <img src="../img/edit.png"><a href="../vistas_user/indexuser.html">Editar perfil</a></li>
+                    <li> <img src="../img/question.png"><a href="../vistas_user/indexuser.html">Soporte</a></li>
+                    <li> <img src="../img/log-out.png"><a href="../vistas/index.html">Cerrar sesión</a></li>
+                </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <!--FIN BARRA DE NAVEGACIÓN-->
+    <script>
+        function menuToggle(){
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

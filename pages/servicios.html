@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav>
+        <div class="logo">
+            <h4><img src="../img/logo.png" alt="">Veranum</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../pages/index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href="../pages/reservas.html">Reservas</a>
+            </li>
+            <li>
+                <a href="../pages/login.html">Iniciar sesión</a>
+            </li>
+        </ul>
+    </nav>
+    <!--FIN BARRA DE NAVEGACIÓN-->
+    <div class="slider owl-carousel">
+        <div class="card">
+        <div class="img">
+            <img src="../img/serv1.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                Gimnasio
+            </div>
+            <div class="sub-title">
+                Servicio adicional
+            </div>
+            <p>
+                Contamos con un gimnasio que se divide en dos secciones, una en la que encontrarás gran variedad de máquinas para hacer ejercicios de fuerza y por el otro lado, una sección de máquinas de cardio.
+            </p>
+            <div class="btn">
+                <button>Reservar</button>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="img">
+            <img src="../img/serv2.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                Piscinas
+            </div>
+            <div class="sub-title">
+                Servicio adicional
+            </div>
+            <p>
+                Dos maravillosas piscinas que además de dar una buena vista, tienen una profundidad variada para comodida del cliente, así como también una de ellas es exclusivamente para niños.
+            </p>
+            <div class="btn">
+                <button>Reservar</button>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="img">
+            <img src="../img/serv3.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                Lavandería
+            </div>
+            <div class="sub-title">
+                Servicio adicional
+            </div>
+            <p>
+                Lavandería con personal especialmente asignado con tal de que nuestros clientes puedan darse el tiempo de disfrutar sin tener que preocuparse del lavado de su ropa constantemente.
+            </p>
+            <div class="btn">
+                <button>Reservar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+          autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+</html>

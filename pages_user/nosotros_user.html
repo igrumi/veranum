@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nosotros</title>
+</head>
+<body>
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav>
+        <div class="logo">
+            <h4><img src="../img/logo.png" alt="">Veranum</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../pages_user/index_user.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../pages_user/about_user.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="../pages_user/servicios_user.html">Servicios</a>
+            </li>
+            <li>
+                <a href="../pages_user/reservas_user.html">Reservas</a>
+            </li>
+            <div class="act1">
+                <div class="perfil" onclick="menuToggle();">
+                <img src="../img/pic.jpg">
+                </div>
+                <div class="menu">
+                <h3>Tamara Grumi<br><span>Usuario</span></h3>
+                <ul>
+                    <li> <img src="../img/user.png"><a href="../vistas_user/indexuser.html">Mi perfil</a></li>
+                    <li> <img src="../img/settings.png"><a href="../vistas_user/indexuser.html">Configuración</a></li>
+                    <li> <img src="../img/edit.png"><a href="../vistas_user/indexuser.html">Editar perfil</a></li>
+                    <li> <img src="../img/question.png"><a href="../vistas_user/indexuser.html">Soporte</a></li>
+                    <li> <img src="../img/log-out.png"><a href="../vistas/index.html">Cerrar sesión</a></li>
+                </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <!--FIN BARRA DE NAVEGACIÓN-->
+
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>¿Quienes somos?</h1>
+            <p class="text">
+                La empresa hotelera VERANUM posee actualmente 2 hoteles, uno ubicado en Santiago
+                y el otro ubicado en la 5ta región. Es una empresa que posee experiencia en administración 
+                hotelera, puesto que fue fundada hace 30 años, en estos años se ha destacado por ser una 
+                empresa cercana a sus clientes manteniendo un contacto fluido con cada uno. Aún asi, la 
+                competencia aumenta cada día. Es por esto que nosotros nos preocupamos de entregarles el
+                mejor servicio posible, servicios que sabemos que les encantan, precios irresistibles e 
+                incomparables y para terminar pero no menos importante, una atención que ningún otro hotel
+                podria ofrecer.
+            </p>
+            <div class="skills">
+                <span>Confianza</span>
+                <span>Comodidad</span>
+                <span>Buenas experiencias</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function menuToggle(){
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
